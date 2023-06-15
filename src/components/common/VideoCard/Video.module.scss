@@ -4,7 +4,8 @@
   &__imageBody{
     @apply relative w-[167px] h-[94px] rounded-b5 border border-gray overflow-hidden flex justify-center items-center;
     &__playIcon{
-      @apply w-[28px] h-[28px] bg-orange rounded-b5 flex justify-center items-center;
+      background: red;
+      @apply w-[28px] h-[28px] bg-orange rounded-b5 flex justify-center items-center z-10;
     }
   }
   &__cardBody{
