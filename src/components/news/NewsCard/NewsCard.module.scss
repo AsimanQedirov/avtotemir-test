@@ -1,0 +1,27 @@
+@import "src/assets/styles/variables";
+.card{
+  @apply bg-white rounded-[10px] p-[10px] grid grid-flow-col gap-[10px];
+  &__image{
+    @apply w-[113px] h-[94px] relative rounded-[10px];
+  }
+  &__body{
+    @apply flex flex-col justify-between;
+    &__summary{
+      @apply flex flex-col justify-between items-start;
+      h5{
+        font-size: 12px;
+        font-weight: 700;
+      }
+      p{
+        font-size: 10px;
+      }
+    }
+    &__publishedBody{
+      @apply flex justify-between text-[10px] font-bold;
+      color: $orange;
+      span{
+        @apply flex items-center gap-0.5;
+      }
+    }
+  }
+}

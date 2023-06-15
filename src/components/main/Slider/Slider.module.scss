@@ -1,0 +1,46 @@
+@import "../../../assets/styles/variables";
+
+.slider {
+  position: relative;
+  border-radius: 10px;
+  z-index: 1;
+  overflow: hidden;
+
+  &__arrowButtons {
+    @apply absolute flex gap-[24px]
+    sm:top-[24px] sm:right-[24px]
+    sm:w-20 sm:bottom-auto
+    bottom-[22px] justify-between
+    w-full right-0 sm:px-0 px-[22px] z-[1];
+  }
+
+  &__prev-button {
+
+  }
+
+  &__next-button {
+
+  }
+
+  &__item {
+    @apply relative min-h-[300px] sm:min-h-[440px];
+    background: $purple;
+    z-index: 0;
+    &__content {
+      @apply absolute text-white sm:w-1/2 w-[98%]
+      sm:bottom-[30px] sm:left-[30px] sm:top-auto
+      top-[10px] left-[10px];
+      button {
+        @include button($orange, #fff, 20px, 9px, 10px)
+      }
+
+      h2 {
+        @apply font-[600] text-[16px] sm:text-[35px];
+      }
+
+      p {
+        font-size: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@import "src/assets/styles/variables";
+
+.layout {
+  background: $layoutBackground;
+
+  &__container {
+    @apply sm:max-w-[912px] w-[90%];
+    margin: auto;
+  }
+}

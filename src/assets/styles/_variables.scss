@@ -1,0 +1,18 @@
+$black: #2C2C2C;
+$orange: #EA650A;
+$light: #F3F3F3;
+$purple: #513CD3;
+$containerWidth: 912px;
+$layoutBackground : #f3f3f3;
+
+@mixin button($backgroundColor , $textColor , $px , $py , $borderRadius) {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 600;
+  word-break: keep-all;
+  background-color: $backgroundColor;
+  color: $textColor;
+  padding: $py $px;
+  border-radius: $borderRadius;
+}

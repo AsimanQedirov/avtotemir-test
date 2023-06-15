@@ -1,0 +1,96 @@
+@import "src/assets/styles/variables";
+
+.searchbar {
+  @apply grid grid-cols-none sm:grid-cols-2 py-[20px];
+
+  &__searchBox {
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+
+    &__selectbox {
+      max-width: 154px;
+
+      * {
+        border: none !important;
+      }
+
+      input::placeholder {
+        color: #2C2C2C;
+        font-size: 11px;
+        font-weight: 600;
+      }
+    }
+
+    &__form {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      border-left: 1px solid #D9D9D9;
+      //margin-left: 20px;
+      padding: 5px;
+
+      input {
+        @apply pl-[5px] sm:pl-[20px] w-[60%] w-[70%];
+        outline: none;
+
+        &::placeholder {
+          font-size: 11px;
+          color: #2C2C2C;
+          opacity: 0.3;
+        }
+      }
+
+      button {
+        @include button($orange, #fff, 10px, 7px, 5px);
+      }
+    }
+  }
+
+
+  &__info {
+    @apply hidden sm:flex justify-end;
+    &__callme {
+      @apply flex items-center justify-between mr-[12px];
+      &__phone {
+        p:first-child {
+          text-align: end;
+          font-size: 10px;
+          color: #818181;
+        }
+
+        p:last-child {
+          text-align: end;
+          font-weight: 600;
+          font-size: 10px;
+        }
+      }
+    }
+
+    &__email {
+      @apply flex items-center gap-[10px];
+      &__horizontal {
+        width: 20px;
+        height: 1px;
+        background: black;
+        transform: rotate(90deg);
+      }
+
+      &__info {
+        p:first-child {
+          text-align: end;
+          font-size: 10px;
+          color: #818181;
+        }
+
+        p:last-child {
+          text-align: end;
+          font-weight: 600;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

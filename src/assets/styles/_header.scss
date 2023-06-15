@@ -1,0 +1,120 @@
+.responsive-header {
+  @apply h-[60px] w-[90%] m-auto grid grid-cols-2 gap-[12px] sm:hidden;
+  &__callme {
+    @apply flex items-center justify-between;
+    &__phone {
+      p:first-child {
+        text-align: end;
+        font-size: 10px;
+        color: #818181;
+      }
+
+      p:last-child {
+        text-align: end;
+        font-weight: 600;
+        font-size: 10px;
+      }
+    }
+  }
+
+  &__email {
+    @apply flex items-center gap-[10px];
+    &__horizontal {
+      width: 20px;
+      height: 1px;
+      background: black;
+      transform: rotate(90deg);
+    }
+
+    &__info {
+      p:first-child {
+        text-align: end;
+        font-size: 10px;
+        color: #818181;
+      }
+
+      p:last-child {
+        text-align: end;
+        font-weight: 600;
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+header {
+  .account-navbar-container{
+    @apply bg-black h-[60px];
+    .account-navbar {
+      @apply sm:max-w-[912px] w-[90%] m-auto h-full flex justify-between items-center;
+      nav {
+        @apply hidden sm:block ;
+        ul {
+          @apply flex gap-[20px] text-white text-[10px] font-semibold;
+        }
+      }
+
+      .account-navigation {
+        @apply flex items-center sm:w-max w-full;
+        &__register-button {
+          @include button(#fff, $black, 10px, 6px, 10px);
+          @apply gap-[6px] mr-[10px];
+
+        }
+
+        &__login-button {
+          @include button($orange, #fff, 10px, 6px, 10px);
+          @apply gap-[6px];
+        }
+
+        &__theme-button {
+          @include button($orange, #fff, 7px, 6px, 10px);
+          @apply gap-[6px] hidden sm:block;
+        }
+
+        &__language-button {
+          @include button(transparent, #fff, 6px, 4px, 10px);
+          border: 1px solid white;
+
+        }
+
+        &__horizontal-line {
+          @apply mx-[7px] sm:mx-[5px] ;
+          width: 20px;
+          height: 1px;
+          background: white;
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+
+  .sitemap-navigation {
+    @apply h-[73px] sm:max-w-[912px] m-auto
+    items-center flex-wrap hidden sm:flex;
+    &__brand {
+      @apply flex items-center justify-between w-full;
+      ul {
+        @apply flex gap-[20px] text-[$black] text-[12px] font-semibold flex-wrap;
+      }
+
+      &__nav {
+        @apply flex items-center gap-[43px];
+        &__active{
+          color: $orange;
+          position: relative;
+          &::after{
+            content: "";
+            width: 20px;
+            height: 2px;
+            background: $orange;
+            position: absolute;
+            bottom: -2px;
+            left: 30%;
+            border-radius: 2px;
+          }
+        }
+      }
+    }
+  }
+}
