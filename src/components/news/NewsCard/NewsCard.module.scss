@@ -1,6 +1,6 @@
 @import "src/assets/styles/variables";
 .card{
-  @apply bg-white rounded-[10px] p-[10px] grid grid-flow-col gap-[10px];
+  @apply bg-white rounded-[10px] p-[10px] grid grid-flow-col gap-[10px] cursor-pointer;
   &__image{
     @apply w-[113px] h-[94px] relative rounded-[10px];
   }

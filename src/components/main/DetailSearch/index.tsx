@@ -3,7 +3,7 @@ import NavigatePageTitle from "@/components/common/NavigatePageTitle";
 import masterIcon from '@/assets/icons/pageBreadCrumb/masterIcon.svg'
 import DetailSearch from "@/components/main/DetailSearch/index";
 import SearchBar from "@/components/main/DetailSearch/SearchBar";
-import MasterCard from "@/components/common/MasterCard";
+import MasterCard from "@/components/main/Masters/MasterCard";
 const Index = () => {
     return (
         <div className={'sm:grid sm:grid-cols-4 gap-gap20 mt-3'}>

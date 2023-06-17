@@ -1,7 +1,7 @@
 import React from 'react';
 import NavigatePageTitle from "@/components/common/NavigatePageTitle";
 import masters from "@/assets/icons/pageBreadCrumb/masters.svg";
-import MasterCard from "@/components/common/MasterCard";
+import MasterCard from "@/components/main/Masters/MasterCard";
 
 const Index = () => {
     return (

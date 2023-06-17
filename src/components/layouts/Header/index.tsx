@@ -1,16 +1,14 @@
 import React from 'react';
 import Link from "next/link";
 import Image from "next/image";
-import profileDark from '@/assets/icons/profile-dark.svg'
-import profileLight from '@/assets/icons/profile-light.svg'
 import lightModeIcon from '@/assets/icons/light-mode.svg';
 import Logo from '@/assets/images/logo.svg';
 import callReceived from '@/assets/icons/call-received.svg';
 import sms from '@/assets/icons/sms.svg';
 import TranslateDropDown from "../../common/TranslateDropDown";
 import ResponsiveMenu from "@/components/layouts/ResponsiveMenu";
-import {useRouter} from "next/router";
 import NavLink from "@/components/layouts/Header/NavLink";
+import Auth from "@/components/auth";
 
 const Index = () => {
 
@@ -55,22 +53,7 @@ const Index = () => {
                                     />
                                 </button>
                                 <span className="account-navigation__horizontal-line hidden sm:block"></span>
-                                <button className={"account-navigation__register-button"}>
-                                    <Image
-                                        src={profileDark}
-                                        width={17}
-                                        height={17}
-                                        alt={'Register icon'}
-                                    />Qeydiyyat
-                                </button>
-                                <button className={"account-navigation__login-button"}>
-                                    <Image
-                                        src={profileLight}
-                                        width={17}
-                                        height={17}
-                                        alt={'Login icon'}
-                                    /><span className={"break-keep"}>Daxil ol</span>
-                                </button>
+                                <Auth/>
                                 <span className="account-navigation__horizontal-line"></span>
                                 <TranslateDropDown/>
                             </>

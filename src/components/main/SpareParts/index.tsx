@@ -1,7 +1,7 @@
 import React from 'react';
 import NavigatePageTitle from "@/components/common/NavigatePageTitle";
 import sparePartIcon from "@/assets/icons/pageBreadCrumb/sparePartIcon.svg";
-import SparePartCard from "@/components/common/SparePartCard";
+import SparePartCard from "@/components/main/SpareParts/SparePartCard";
 
 const Index = () => {
     return (

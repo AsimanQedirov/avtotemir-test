@@ -9,13 +9,13 @@ const NavigatePageTitle : FC<NavigatePageTitle> = ({title,iconSrc,to,buttonTitle
     return (
         <div className={'flex justify-between items-center gap-[20px]'}>
             <PageTitle title={title} iconSrc={iconSrc}/>
-           <Link href={'/sa'}>
-               <a className={`bg-black 
+            {<Link href={'/sa'}>
+                <a className={`bg-black 
                text-white text-[12px]
                 text-center 
                 w-[213px] py-[12px]
                  rounded-b10
-                `}>{buttonTitle}</a></Link>
+                `}>{buttonTitle}</a></Link>}
         </div>
     );
 };

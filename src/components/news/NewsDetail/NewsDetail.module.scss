@@ -1,0 +1,27 @@
+.image{
+  @apply relative overflow-hidden rounded-b10 w-full h-[264px] my-3;
+}
+.content{
+  @apply bg-white rounded-b10 p-[20px];
+  &__title{
+    @apply flex justify-between items-center flex-wrap;
+    h5{
+      @apply font-[600] text-[16px];
+    }
+    &__date{
+      @apply text-orange font-bold text-[14px] flex gap-3;
+      span{
+        @apply flex gap-1;
+      }
+    }
+  }
+  &__text{
+      @apply bg-light text-[12px] p-[20px] rounded-b10 mt-[20px] leading-[18px];
+  }
+  &__tags{
+    @apply my-3 flex flex-wrap gap-[10px];
+    span{
+      @apply bg-orange rounded-b10 px-[20px] py-[10px] inline-block text-white;
+    }
+  }
+}

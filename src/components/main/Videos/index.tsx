@@ -1,7 +1,7 @@
 import React from 'react';
 import NavigatePageTitle from "@/components/common/NavigatePageTitle";
 import vipMasterIcon from "@/assets/icons/pageBreadCrumb/VipMastersIcon.svg";
-import VideoCard from "@/components/common/VideoCard";
+import VideoCard from "@/components/main/Videos/VideoCard";
 
 const Index = () => {
     return (

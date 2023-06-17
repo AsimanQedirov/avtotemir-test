@@ -1,0 +1,37 @@
+@import "src/assets/styles/variables";
+
+.backHeader{
+  @apply my-3;
+  &__backButton{
+    @apply rounded-b10 text-text14 font-600 cursor-pointer bg-white inline-flex gap-gap10 px-[10px] py-[5px] items-center;
+  }
+  &__content{
+    @apply bg-white rounded-b10 p-20;
+    &__header{
+      @apply flex justify-between items-center;
+      h5{
+        @apply font-600 text-text18;
+      }
+      button{
+        @apply flex items-center bg-orange text-white rounded-b5 gap-gap5 text-text16 px-[15px] py-[10px] font-600;
+      }
+    }
+    &__summary{
+      @apply grid sm:grid-cols-5 grid-cols-none bg-light rounded-b5 p-15;
+      h5{
+        @apply text-text12 mt-[10px] sm:mt-0;
+      }
+      p{
+        @apply text-text14 font-600 text-orange sm:mt-[10px];
+      }
+    }
+    &__description{
+      h5{
+        @apply text-[#818181] text-text14 mt-3;
+      }
+      p{
+        @apply text-text14 leading-[20px] mt-1 font-500;
+      }
+    }
+  }
+}

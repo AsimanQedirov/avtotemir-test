@@ -1,11 +1,13 @@
-import React from 'react';
+import React, {FC} from 'react';
 import styles from './Video.module.scss'
 import Image from "next/image";
 import example from "@/assets/images/store_example.png";
 import calendar from '@/assets/icons/news/calendar.svg';
 import playIcon from '@/assets/icons/videos/playIcon.svg';
+import {IVideoCard} from "@/components/main/Videos/VideoCard/types";
 
-const Index = () => {
+const Index : FC<IVideoCard> = ({popup}) => {
+
     return (
         <div className={styles.card}>
             <div className={styles.card__imageBody}>

@@ -26,11 +26,11 @@ const NavLink = () => {
             <li className={handleActiveLink('/news')}>
                 <Link href={'/news'}>Xəbərlər</Link>
             </li>
-            <li className={handleActiveLink('/')}>
-                <Link href={'/'}>Videolar</Link>
+            <li className={handleActiveLink('/videos')}>
+                <Link href={'/videos'}>Videolar</Link>
             </li>
-            <li className={handleActiveLink('/')}>
-                <Link href={'/'}>Vakansiyalar</Link>
+            <li className={handleActiveLink('/vacancies')}>
+                <Link href={'/vacancies'}>Vakansiyalar</Link>
             </li>
         </ul>
     );

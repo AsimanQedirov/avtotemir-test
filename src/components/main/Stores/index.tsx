@@ -1,7 +1,7 @@
 import React from 'react';
 import NavigatePageTitle from "@/components/common/NavigatePageTitle";
 import shopIcon from "@/assets/icons/pageBreadCrumb/shopIcon.svg";
-import StoreCard from "@/components/common/StoreCard";
+import StoreCard from "@/components/main/Stores/StoreCard";
 
 const Index = () => {
     return (

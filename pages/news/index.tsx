@@ -6,15 +6,15 @@ import {getList} from "@/services/news";
 const News = () => {
 
     useEffect(()=>{
-       getList()
-           .then(res => {
-               console.log(res)
-           })
+        getList()
+            .then(res => {
+                console.log(res)
+            })
     },[]);
 
     return (
         <>
-           <PageTitle title={'Xəbərlər'} iconSrc={newsIcon} />
+            <PageTitle title={'Xəbərlər'} iconSrc={newsIcon} />
             <div className={'grid sm:grid-cols-2 gap-3 my-3'}>
                 <NewsCard/>
                 <NewsCard/>

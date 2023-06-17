@@ -1,0 +1,32 @@
+@import "src/assets/styles/variables";
+.card{
+  @apply bg-light p-[20px] rounded-b10;
+ &__entry{
+   display: grid;
+   grid-template-columns: 1fr 1fr max-content;
+   grid-template-areas: "chapter vacancie";
+   align-items: end;
+   font-size: 12px;
+   font-weight: 500;
+   gap: 0 .25rem;
+   margin-bottom: 20px;
+   &__chapter{
+     grid-area: chapter;
+     position: relative;
+     overflow: hidden;
+     &::after{
+       position: absolute;
+       //padding-left: .25em;
+       content: " . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ";
+       //text-align: right;
+     }
+   }
+   &__vacancie{
+     @apply text-orange text-right;
+     //grid-area: page;
+   }
+ }
+  a{
+    @apply bg-black block text-center cursor-pointer text-[10px] text-white w-full rounded-b5 py-[10px] mt-2;
+  }
+}
