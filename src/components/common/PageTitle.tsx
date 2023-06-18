@@ -9,7 +9,7 @@ export interface PageTitle{
 const PageTitle : FC<PageTitle> = ({title,iconSrc}) => {
     return (
         <div
-            className={`bg-white h-[40px] p-[10px] text-[#818181] font-[16px] rounded-[10px] flex items-center font-semibold w-full`}>
+            className={`bg-white h-[40px] p-[10px] text-[#818181] font-[16px] rounded-[10px] flex items-center font-semibold w-full my-3`}>
             <span className={'bg-black w-[22px] h-[22px] rounded-md mr-2 flex items-center justify-center'}>
             <Image src={iconSrc} alt={`${title}`}/>
             </span>

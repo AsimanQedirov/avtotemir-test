@@ -1,39 +1,20 @@
-import React, {FC, useMemo} from 'react';
+import React, {FC} from 'react';
 import Link from "next/link";
 import {useRouter} from "next/router";
-import {ILinks} from "@/components/layouts/Header/types";
-import {round} from "@mantine/core/lib/ColorPicker/converters/parsers";
 
-const NavLink = () => {
+interface INavLink {
+    href : string;
+    children : Element
+}
 
+const NavLink : FC<INavLink> = ({href , children}) => {
     const {pathname} = useRouter();
+    const handleActiveLink =()=> pathname === href ? 'sitemap-navigation__brand__nav__active' : ""
 
-    console.log(pathname)
-    const handleActiveLink =(href : string)=> pathname === href ? 'sitemap-navigation__brand__nav__active' : ""
-
-
-    return (
-        <ul>
-            <li className={handleActiveLink('/')}>
-                <Link href={'/'}>Ustalar</Link>
-            </li>
-            <li className={handleActiveLink('/')}>
-                <Link href={'/'}>Mağazalar</Link>
-            </li>
-            <li className={handleActiveLink('/')}>
-                <Link href={'/'}>Avtoservislər</Link>
-            </li>
-            <li className={handleActiveLink('/news')}>
-                <Link href={'/news'}>Xəbərlər</Link>
-            </li>
-            <li className={handleActiveLink('/videos')}>
-                <Link href={'/videos'}>Videolar</Link>
-            </li>
-            <li className={handleActiveLink('/vacancies')}>
-                <Link href={'/vacancies'}>Vakansiyalar</Link>
-            </li>
-        </ul>
-    );
+        return(
+            <li className={handleActiveLink()}>
+                <Link href={href}>{children}</Link>
+            </li>)
 };
 
 export default NavLink;

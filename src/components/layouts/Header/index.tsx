@@ -69,12 +69,20 @@ const Index = () => {
                                         <Image src={Logo} alt={"Avtotemir.az Logo"}/>
                                     </a>
                                 </Link>
-                                <NavLink/>
+                            <ul>
+                                <NavLink href={'/masters'}>Ustalar</NavLink>
+                                <NavLink href={'/stores'}>Mağazalar</NavLink>
+                                <NavLink href={'/auto-services'}>Avtoservislər</NavLink>
+                                <NavLink href={'/news'}>Xəbərlər</NavLink>
+                                <NavLink href={'/videos'}>Videolar</NavLink>
+                                <NavLink href={'/vacancies'}>Vakansiyalar</NavLink>
+                            </ul>
+
                         </div>
                         <div>
                             <ul>
-                                <li><Link href="">Klublar</Link></li>
-                                <li><Link href="">Ehtiyat hissələri</Link></li>
+                                <NavLink href={'/clubs'}>Klublar</NavLink>
+                                <NavLink href={'/spare-parts'}>Ehtiyat hissələri</NavLink>
                             </ul>
                         </div>
                     </div>

@@ -1,7 +1,7 @@
 .header{
   @apply flex justify-between items-center mb-3;
   a{
-    @apply rounded-b10 py-[10px] flex items-center gap-gap20 text-[16px] font-semibold px-[20px];
+    @apply rounded-b10 py-[10px] flex items-center gap-gap20 text-[16px] font-semibold px-[20px] cursor-pointer;
   }
   &__searchAnnouncement{
     @apply bg-black text-white;

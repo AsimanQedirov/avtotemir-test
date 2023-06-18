@@ -1,0 +1,58 @@
+@import "src/assets/styles/variables";
+.container{
+  @apply bg-white rounded-b10 p-20;
+  &__title{
+    @apply flex justify-between flex-wrap;
+    h5{
+      @apply text-text18 font-600;
+    }
+    &__rate{
+      @apply flex gap-gap20 items-center;
+    }
+  }
+  &__content{
+    @apply bg-light rounded-b10 p-10 mt-3 grid grid-cols-12 gap-gap10;
+    &__about{
+      @apply sm:col-span-8 col-span-12 sm:order-1 order-2;
+      a{
+        @apply text-orange font-600 text-text16 cursor-pointer;
+      }
+      h5{
+        @apply font-600 text-text12 mt-2;
+      }
+      div{
+        @include scrollbars(3px , $orange , '#cac5c5');
+        @apply max-h-52 overflow-y-auto text-text12 leading-[22px] pr-2;
+      }
+    }
+    &__giveVoice{
+      @apply bg-white sm:col-span-4 col-span-12 rounded-b10 flex flex-col justify-between p-20 sm:order-2 order-1;
+      &__image{
+        @apply h-[160px] relative mt-3;
+      }
+      &__voice{
+        //@apply
+      }
+    }
+  }
+
+  &__share{
+    @apply my-[20px];
+    h5{
+      @apply text-text12 text-grey;
+    }
+  }
+  &__presentation{
+    @apply mt-3;
+    h5{
+      @apply font-bold text-text14 flex gap-gap5;
+    }
+    &__videoIframe{
+      @apply rounded-b10 overflow-hidden my-4;
+      iframe{
+        width: 100%;
+        height: 400px;
+      }
+    }
+  }
+}

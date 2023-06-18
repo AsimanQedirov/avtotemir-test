@@ -8,7 +8,8 @@ module.exports = {
                 orange : "#EA650A",
                 purple : "#513CD3",
                 light : "#F3F3F3",
-                gray : "#D9D9D9"
+                gray : "#D9D9D9",
+                grey : "#818181"
             },
             borderRadius : {
                 b5 : "5px",
